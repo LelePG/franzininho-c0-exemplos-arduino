@@ -33,7 +33,7 @@ jobs:
               cd ./action-destino/
               echo $(pwd)
               repo_name="Franzininho C0 - Exemplos Arduino"
-              rm -rf "./content/$repo_name/$dir" # remove the directory de dntro de action-destino
+              rm -rf "./content/$repo_name/${dir:3}" # remove the directory de dntro de action-destino
               hugo new content "$repo_name/${dir:3}/_index.md"
               cat "../$file" >> "./content/$repo_name/${dir:3}/_index.md"
 
