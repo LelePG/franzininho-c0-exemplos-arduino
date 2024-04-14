@@ -1,6 +1,8 @@
 # Blinky
 
-Este é o tradicional exemplo "pisca LED".
+Este é o tradicional exemplo "pisca LED". COM ALTERAÇÃO DA LETÍCIA
+
+## aLTERADO
 
 ## Hardware
 
@@ -16,12 +18,11 @@ O código é o exemplo padrão "Blink" do Arduino. A única alteração é a def
 
 O código é bem simples:
 
-* Na iniciação configuramos o pino para saída
-* No laço principal acendemos o LED, aguardamos um tempo, apagamos o LED e aguardamos mais um tempo.
+- Na iniciação configuramos o pino para saída
+- No laço principal acendemos o LED, aguardamos um tempo, apagamos o LED e aguardamos mais um tempo.
 
 ## Experiências sugeridas
 
-* Trocar o LED usado (a Franzininho C0 tem dois LEDs).
-* Mudar os tempos que o LED permanece aceso e apagado.
-* Piscar os dois LEDs **com tempos diferentes**. Talvez não seja tão fácil como você imagina, isto mostra as limitações deste tipo de programação, baseada em esperas feitas com delay().
-
+- Trocar o LED usado (a Franzininho C0 tem dois LEDs).
+- Mudar os tempos que o LED permanece aceso e apagado.
+- Piscar os dois LEDs **com tempos diferentes**. Talvez não seja tão fácil como você imagina, isto mostra as limitações deste tipo de programação, baseada em esperas feitas com delay().
