@@ -1,4 +1,4 @@
-# Blinky Int
+# Blinky Int modificado mesmo
 
 Neste exemplo usamos uma **interrupção de timer** para piscar o LED;
 
@@ -14,7 +14,6 @@ Na iniciação do timer configuramos o tempo entre cada interrupção e definimo
 
 ## Experiências Sugeridas
 
-* Trocar o LED usado (a Franzininho C0 tem dois LEDs).
-* Mudar os tempos que o LED permanece aceso e apagado.
-* Piscar os dois LEDs **com tempos diferentes**.
-
+- Trocar o LED usado (a Franzininho C0 tem dois LEDs).
+- Mudar os tempos que o LED permanece aceso e apagado.
+- Piscar os dois LEDs **com tempos diferentes**.
