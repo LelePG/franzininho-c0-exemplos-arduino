@@ -58,7 +58,7 @@ jobs:
             cd ./action-destino/
             git add .
 
-            if git diff ; then
+            if git diff || 1 ; then
               git commit -m "Documentação automática"
               # Usar o link do repositório de destino na linha abaixo.
               git push https://${{ secrets.TOKEN }}@github.com/LelePG/action-destino.git
