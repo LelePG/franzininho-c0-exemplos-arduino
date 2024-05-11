@@ -61,7 +61,7 @@ jobs:
             
           {
             git commit -m "Documentação automática" &&
-            git push https://${{ secrets.TOKEN }}@github.com/LelePG/action-dest.git
+            git push https://${{ secrets.TOKEN }}@github.com/LelePG/action-destino.git
           } || {
             echo "Sem alterações significativas para committar"
           }
