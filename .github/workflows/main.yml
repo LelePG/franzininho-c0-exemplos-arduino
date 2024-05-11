@@ -32,6 +32,7 @@ jobs:
             fi
             
             repo_name="Franzininho C0 - Exemplos Arduino"
+            hugo new content -k no-render "$repo_name/_index.md" --force
 
             if git diff --quiet HEAD~1 HEAD "$dir/README.md"; then
                   echo "No changes to $dir/README.md"
