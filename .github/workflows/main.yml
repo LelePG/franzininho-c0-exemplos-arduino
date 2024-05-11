@@ -40,14 +40,14 @@ jobs:
               cd ./action-destino/
               # Usar o nome onde os arquivos do projeto devem ser usados na documentação
               repo_name="Franzininho C0 - Exemplos Arduino"
-              rm -rf "./content/$repo_name/${dir:3}"
-              hugo new content "$repo_name/${dir:3}/_index.md"
-              cat "../$file" >> "./content/$repo_name/${dir:3}/_index.md"
+              rm -rf "./content/$repo_name/$dir"
+              hugo new content "$repo_name/$dir/_index.md"
+              cat "../$file" >> "./content/$repo_name/$dir/_index.md"
 
               echo "Copiando $dir"
 
               if [[ -d "../$dir/img" ]]; then
-                cp -r "../$dir/img" "./content/$repo_name/${dir:3}/img"
+                cp -r "../$dir/img" "./content/$repo_name/$dir/img"
               fi
               cd ..
             fi
