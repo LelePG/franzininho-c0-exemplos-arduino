@@ -3,7 +3,7 @@
 Exemplo de uso de I2C para conexão a um display LCD alfanumérico com interface I2C usando o PCF8574. com edição
 dd
 
-## Hardware
+## Hardware alteracaaaaaa
 
 Para este exemplo é necessário conectar um display LCD alfanumérico com interface LCD usando o PCF8574:
 
