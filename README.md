@@ -2,7 +2,7 @@
 
 Exemplos de código para Franzininho C0 na Arduino IDE
 
-Referência oficial da API Arduino: mudança 1
+Referência oficial da API Arduino: mudança 1 2
 
 https://www.arduino.cc/reference/en/
 
