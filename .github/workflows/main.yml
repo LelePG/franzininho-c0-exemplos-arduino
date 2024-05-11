@@ -56,7 +56,12 @@ jobs:
             fi
             done < <(find . -path './.git' -prune -o -path './action-destino' -prune -o -iname 'readme.md' -print0)
             cd ./action-destino/
-            hugo new content -k no-render "$repo_name/_index.md" --force
+
+            if ! git diff --quiet HEAD~1 HEAD "../README.md"; then # se teve modificação no readme principal
+                hugo new content "$repo_name/_index.md" --force
+                cat ../README.md >> "./content/$repo_name/_index.md"
+            fi
+            
             git add .
 
             
