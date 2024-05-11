@@ -30,16 +30,19 @@ jobs:
                 echo "No README.md found"
                 continue
             fi
+            
+            repo_name="Franzininho C0 - Exemplos Arduino"
 
             if git diff --quiet HEAD~1 HEAD "$dir/README.md"; then
                   echo "No changes to $dir/README.md"
-                  continue
+                  if [[ -d "./action-destino/content/$repo_name/$dir" ]]; then
+                        continue
+                  fi
             fi
 
             if [[ "$dir" != "." && "$dir" != ".." ]]; then
               cd ./action-destino/
               # Usar o nome onde os arquivos do projeto devem ser usados na documentação
-              repo_name="Franzininho C0 - Exemplos Arduino"
               rm -rf "./content/$repo_name/$dir"
               hugo new content "$repo_name/$dir/_index.md"
               cat "../$file" >> "./content/$repo_name/$dir/_index.md"
