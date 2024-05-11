@@ -2,7 +2,7 @@
 
 Este exemplo envia a mensagem "Alo, Franzininho C0!" para o micro através da serial conectada à USB.
 
-## Configuração na IDE Arduino
+## Configuração
 
 No menu Tools, verifique que "U(S)ART Support" está configurado para "Enabled (generic Serial).
 

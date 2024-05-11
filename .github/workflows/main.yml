@@ -59,9 +59,9 @@ jobs:
             git add .
 
             
-            {
+          {
             git commit -m "Documentação automática" &&
             git push https://${{ secrets.TOKEN }}@github.com/LelePG/action-dest.git
           } || {
-            echo "Sem alterações para comitar"
+            echo "Sem alterações significativas para committar"
           }
